@@ -1,0 +1,7 @@
+.ex1 {
+    transition: background-color 2s;
+}
+
+.ex1:hover {
+    background: red;
+}
