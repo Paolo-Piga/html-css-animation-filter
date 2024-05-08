@@ -67,3 +67,69 @@
     border-radius: 20%;
 }
 
+.ex-9-img{
+    transition: 2s;
+}
+
+.ex-9-img:hover{
+    filter: blur(50);
+    filter: grayscale(20);
+    border-radius: 20%;
+    width: 60%;
+}
+
+.ex-10-icon{
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin{
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
+.ex-11-icon:hover{
+    animation: NotAllSpin 2s linear;
+}
+
+@keyframes NotAllSpin{
+    0%{
+        transform: rotate(0);
+    }
+    90%{
+        transform: rotate(320deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: moveBottomWhite 2s linear;
+}
+@keyframes moveBottomWhite {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 20%;
+    }
+}
